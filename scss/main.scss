@@ -1,0 +1,23 @@
+@import './base';
+
+@import './utils/variables';
+@import './utils/fonts';
+
+@import './components/link';
+@import './components/buttons';
+@import './components/bg';
+@import './components/customer-card';
+@import './components/icons';
+@import './components/product-list';
+@import './layouts/header';
+@import './components/pagination';
+
+@import './layouts/hero-section';
+@import './layouts/about-section';
+@import './layouts/service-setion';
+@import './layouts/customer-section';
+@import './layouts/contacs-section';
+@import './layouts/footer';
+@import './layouts/input';
+@import './layouts/choose-section';
+@import './layouts/product-section';

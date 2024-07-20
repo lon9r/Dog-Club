@@ -1,0 +1,14 @@
+.link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.05em;
+  font-family: var(--main-font);
+  color: var(--main-tezt-color);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--brand-color);
+}

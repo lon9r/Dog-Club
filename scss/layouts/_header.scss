@@ -1,0 +1,42 @@
+.header {
+  margin: 16px 20px 30px 20px;
+  position: relative;
+  @media screen and (min-width: $bp-desctop) {
+    margin: 32px 100px 0 100px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-grow: 1;
+    > img {
+      width: 92px;
+      @media screen and (min-width: $bp-desctop) {
+        width: 182px;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desctop) {
+      flex-grow: 1;
+      display: flex;
+      gap: 48px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 16px;
+    @media screen and (min-width: $bp-desctop) {
+      gap: 24px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.contacts-section {
+  margin-bottom: 90px;
+
+  &__container {
+    margin: 0 auto;
+  }
+  &__text-block {
+    @media screen and (min-width: $bp-desctop) {
+      width: 600px;
+      margin: 0px auto;
+      margin-top: 170px;
+    }
+  }
+
+  &__title {
+    font-family: var(--title-font);
+    color: var(--main-text-color);
+    font-weight: 400;
+    text-align: center;
+    width: 250px;
+    font-size: 32px;
+    margin: 0px auto;
+    margin-top: 40px;
+
+    @media screen and (min-width: $bp-desctop) {
+      font-size: 56px;
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    margin: 0;
+    color: var(--card-bg-color);
+    @media screen and (min-width: $bp-desctop) {
+      font-size: 18px;
+    }
+  }
+
+  &__form {
+    margin-top: 42px;
+  }
+
+  &__btn-container {
+    margin: 0 auto;
+    max-width: 152px;
+    width: 100%;
+  }
+  &:before {
+    display: none;
+    @media screen and (min-width: $bp-desctop) {
+      position: absolute;
+      background-image: url(/photo/left-bg-dog.png);
+      content: '';
+      width: 490px;
+      height: 520px;
+      background-repeat: no-repeat;
+      bottom: 230px;
+      display: block;
+    }
+  }
+  &::after {
+    display: none;
+    @media screen and (min-width: $bp-desctop) {
+      position: absolute;
+      background-image: url(/photo/right-bg-dog.png);
+      content: '';
+      width: 322px;
+      height: 750px;
+      background-repeat: no-repeat;
+      bottom: 250px;
+      right: 0px;
+      display: block;
+    }
+  }
+  &__privacy-form {
+    max-width: 167px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+  &__privacy {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+
+    color: #839aa9;
+    font-family: var(--main-font);
+  }
+}

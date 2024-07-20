@@ -1,0 +1,117 @@
+.footer {
+  margin: 90px 108px 90px 108px;
+  position: relative;
+  &__nav {
+    display: flex;
+    max-width: 945px;
+    width: 100%;
+    margin-bottom: 32px;
+    gap: 136px;
+    @media screen and (min-width: $bp-desctop) {
+      gap: 90px;
+    }
+  }
+  &__social-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-network {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    fill: var(--brand-color);
+  }
+
+  &__menu-list {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    font-family: var(--main-font);
+
+    :hover {
+      color: var(--brand-color);
+    }
+  }
+
+  &__form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input {
+    width: 240px;
+    height: 24px;
+    border: 1px solid var(--brand-color);
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    font-family: var(--main-font);
+    color: var(--brand-color);
+    background-color: #fffaf3;
+  }
+
+  &__input::placeholder {
+    color: var(--brand-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__input:focus::placeholder {
+    color: var(--brand-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--main-text-color);
+  }
+  &__input:focus {
+    outline: 1px solid var(--brand-color);
+  }
+  &__button-contacts {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 126px;
+    height: 35px;
+    background-color: var(--brand-color);
+    transition: 0.3s;
+    border: none;
+    margin: 0 auto;
+    color: var(--second-text-color);
+  }
+  &__button-contacts:hover {
+    background-color: var(--accent-color);
+  }
+
+  &:before {
+    position: absolute;
+    background-image: url(/photo/footer-dog.png);
+    content: '';
+    width: 290px;
+    height: 305px;
+    right: 0px;
+    bottom: -90px;
+    display: block;
+  }
+}

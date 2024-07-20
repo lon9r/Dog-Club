@@ -1,0 +1,58 @@
+.input {
+  margin-bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+
+  &:focus {
+    color: black;
+  }
+
+  &__form-input {
+    width: 520px;
+    padding: 8px 40px 8px 80px;
+    border-radius: 8px;
+    border: 1px solid var(--brand-color);
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    font-family: var(--main-font);
+    color: var(--brand-color);
+  }
+
+  &__form-input::placeholder {
+    color: var(--brand-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  &__form-input:focus::placeholder {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--main-text-color);
+  }
+  &__form-input:focus {
+    outline: 1px solid var(--brand-color);
+  }
+  &__first {
+    background: url(/photo/people.png) no-repeat center left;
+    background-position: 40px;
+  }
+  &__second {
+    background: url(/photo/dog-icon.png) no-repeat center left;
+    background-position: 40px;
+  }
+  &__third {
+    background: url(/photo/phone-icon.png) no-repeat center left;
+    background-position: 40px;
+  }
+  &__last {
+    background: url(/photo/email-icon.png) no-repeat center left;
+    background-position: 40px;
+  }
+}

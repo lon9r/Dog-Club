@@ -1,0 +1,29 @@
+.customer-section {
+  &__title {
+    font-weight: 400;
+    font-size: 56px;
+    font-family: var(--title-font);
+    color: var(--main-text-color);
+    width: 440px;
+    margin: 96px auto 48px auto;
+  }
+
+  &__slider {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  &__list {
+    display: flex;
+    gap: 16px;
+
+    justify-content: center;
+  }
+  &__item {
+    border-radius: 24px;
+    width: 344px;
+    height: 456px;
+  }
+}

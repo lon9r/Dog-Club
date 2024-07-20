@@ -1,0 +1,82 @@
+.hero-bg {
+  background-image: url(/photo/Hero-bg-small.png);
+  height: 325px;
+  position: absolute;
+  z-index: -1;
+  max-width: 625px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -50px;
+  @media screen and (min-width: $bp-desctop) {
+    background-image: url(/photo/hero-bg.png);
+    background-size: 115%;
+    background-position: -200px 0;
+    background-repeat: no-repeat;
+    max-width: 1840px;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    z-index: -1;
+    top: 90px;
+  }
+  @media screen and (min-width: $bp-fullscreen) {
+    background-image: url(/photo/hero-bg.png);
+    background-size: 110%;
+    background-position: -300px 0;
+    background-repeat: no-repeat;
+    max-width: 1840px;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.service-bg {
+  background-image: url(/photo/service-bg.png);
+  background-size: 125%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  @media screen and (min-width: $bp-desctop) {
+    background-size: 140%;
+    background-position: -50px 100px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.contacts-section-bg {
+  background-image: url(/photo/Contacts-bg.png);
+  background-position: 0px 0px;
+  max-width: 360px;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $bp-desctop) {
+    background-size: 125%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    height: 1035px;
+  }
+}
+
+.footer-bg {
+  background-color: #fffaf3;
+  max-width: 1920px;
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+}
