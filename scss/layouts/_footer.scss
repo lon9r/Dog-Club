@@ -1,14 +1,33 @@
 .footer {
-  margin: 90px 108px 90px 108px;
   position: relative;
+
+  &__container {
+    margin: 176px 108px 0px 108px;
+    @media screen and (min-width: $bp-desctop) {
+      margin: 90px 108px 90px 108px;
+    }
+  }
   &__nav {
     display: flex;
-    max-width: 945px;
-    width: 100%;
     margin-bottom: 32px;
-    gap: 136px;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+
     @media screen and (min-width: $bp-desctop) {
-      gap: 90px;
+      gap: 100px;
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 1000px;
+      width: 100%;
+    }
+    @media screen and (min-width: $bp-fullscreen) {
+      gap: 136px;
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 1000px;
+      width: 100%;
     }
   }
   &__social-block {
@@ -16,14 +35,28 @@
     flex-direction: column;
     gap: 24px;
   }
+  &__logo {
+    width: 92px;
+    height: 20px;
+  }
 
   &__social-list {
     display: flex;
+    display: none;
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+    }
+  }
+  &__social-list-phone {
+    display: flex;
+    @media screen and (min-width: $bp-desctop) {
+      display: none;
+    }
   }
 
   &__social-network {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     fill: var(--brand-color);
   }
@@ -32,14 +65,26 @@
     gap: 16px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 160px;
+    @media screen and (min-width: $bp-desctop) {
+      align-items: baseline;
+    }
   }
 
   &__menu-item {
     font-weight: 400;
+    font-size: 16px;
+
+    @media screen and (min-width: $bp-desctop) {
+      font-size: 18px;
+    }
+    :hover {
+      color: var(--brand-color);
+    }
+  }
+  &__menu-link {
     font-size: 18px;
-    line-height: 133%;
-    letter-spacing: 0.05em;
-    font-family: var(--main-font);
 
     :hover {
       color: var(--brand-color);
@@ -70,6 +115,9 @@
     font-family: var(--main-font);
     color: var(--brand-color);
     background-color: #fffaf3;
+    @media screen and (min-width: $bp-desctop) {
+      width: 270px;
+    }
   }
 
   &__input::placeholder {
@@ -104,14 +152,26 @@
     background-color: var(--accent-color);
   }
 
-  &:before {
+  &__dog {
     position: absolute;
-    background-image: url(/photo/footer-dog.png);
-    content: '';
-    width: 290px;
-    height: 305px;
-    right: 0px;
-    bottom: -90px;
-    display: block;
+    width: 128px;
+    height: 145px;
+    top: -123px;
+
+    @media screen and (min-width: $bp-desctop) {
+      position: absolute;
+      right: 50px;
+      width: 290px;
+      height: 305px;
+      bottom: -90px;
+      top: -64px;
+    }
+    @media screen and (min-width: $bp-fullscreen) {
+      position: absolute;
+      right: 500px;
+      width: 290px;
+      height: 305px;
+      top: -64px;
+    }
   }
 }

@@ -1,8 +1,8 @@
 .contacts-section {
   margin-bottom: 90px;
-
+  position: relative;
   &__container {
-    margin: 0 auto;
+    margin: 0px 20px;
   }
   &__text-block {
     @media screen and (min-width: $bp-desctop) {
@@ -21,10 +21,12 @@
     font-size: 32px;
     margin: 0px auto;
     margin-top: 40px;
+    padding: 20px;
 
     @media screen and (min-width: $bp-desctop) {
       font-size: 56px;
       margin-bottom: 16px;
+      width: 605px;
     }
   }
   &__text {
@@ -51,14 +53,21 @@
   }
   &:before {
     display: none;
-    @media screen and (min-width: $bp-desctop) {
-      position: absolute;
-      background-image: url(/photo/left-bg-dog.png);
-      content: '';
+    background-image: url(/photo/left-bg-dog.png);
+    position: absolute;
+    content: '';
+    @media screen and (min-width: $bp-fullscreen) {
       width: 490px;
       height: 520px;
       background-repeat: no-repeat;
-      bottom: 230px;
+      bottom: 30px;
+      display: block;
+    }
+    @media screen and (min-width: $bp-desctop) {
+      width: 490px;
+      height: 500px;
+      background-repeat: no-repeat;
+      bottom: 30px;
       display: block;
     }
   }
@@ -71,7 +80,7 @@
       width: 322px;
       height: 750px;
       background-repeat: no-repeat;
-      bottom: 250px;
+      bottom: 0;
       right: 0px;
       display: block;
     }

@@ -1,5 +1,11 @@
 .product-section {
-  margin: 0 100px;
+  @media screen and (min-width: $bp-desctop) {
+    margin: 0 100px;
+  }
+  @media screen and (min-width: $bp-fullscreen) {
+    margin: 0 180px;
+  }
+
   &__slider {
     margin: 0 auto;
     width: 100%;
@@ -9,5 +15,11 @@
   }
   &__slider-container {
     display: flex;
+    width: 288px;
+    height: 24px;
+    overflow: hidden;
+    margin: 0 auto;
+    @media screen {
+    }
   }
 }

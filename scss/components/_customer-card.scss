@@ -1,9 +1,13 @@
 .customer-card {
-  position: relative;
-  width: 344px;
-  height: 456px;
   text-align: center;
+  position: relative;
   border-radius: 24px;
+  width: 320px;
+  height: 456px;
+  @media screen and (min-width: $bp-desctop) {
+    width: 344px;
+    height: 456px;
+  }
 
   &__bg {
     position: absolute;

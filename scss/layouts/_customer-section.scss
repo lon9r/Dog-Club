@@ -1,11 +1,15 @@
 .customer-section {
   &__title {
-    font-weight: 400;
-    font-size: 56px;
     font-family: var(--title-font);
     color: var(--main-text-color);
-    width: 440px;
     margin: 96px auto 48px auto;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    @media screen and (min-width: $bp-desctop) {
+      font-size: 56px;
+      width: 440px;
+    }
   }
 
   &__slider {
@@ -14,16 +18,32 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+    max-width: 1300px;
+    width: 100%;
+  }
+  &__container {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+    @media screen and (min-width: $bp-desctop) {
+      max-width: 1230px;
+      width: 100%;
+    }
   }
   &__list {
     display: flex;
-    gap: 16px;
-
-    justify-content: center;
+    align-items: center;
   }
   &__item {
     border-radius: 24px;
-    width: 344px;
-    height: 456px;
+    width: 320px;
+    height: 416px;
+
+    @media screen and (min-width: $bp-desctop) {
+      width: 344px;
+      height: 456px;
+      margin: 0;
+    }
   }
 }
